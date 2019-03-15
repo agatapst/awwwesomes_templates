@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+/* MAIN HEADER  */
+header {
+    background-image: linear-gradient(to bottom left, #954BF1, #DB53A5, #EF6982);
+    position: relative;
+}
+
+.main-header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 100px;
+    margin-top: 40px;
+}
+
+.main-header h1 {
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FCFFFE;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.main-header h2 {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #F9DCF2;
+    letter-spacing: 2px;
+}
+
+.wave-1, .wave-2 {
+    position: absolute;
+    right: 0;
+}
+
+.wave-1 {
+    width: 25%;
+    float: right;
+    bottom: 50px;
+}
+
+.wave-2 {
+    width: 40%;
+    float: right;
+    clear: right;
+    bottom: -40px;
+}
+
+/* MAIN NAVBAR */
+.main-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.main-nav li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+}
+
+.main-nav a {
+    color: #6C2A89;
+    font-style: bold;
+    text-decoration: none;
+}
+
+/* MAIN BODY CONTENT */
+.main-body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+.content-row h3 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #4B237C;
+}
+
+.content-row p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #4B237C;
+    letter-spacing: 2px;
+}
+
+.content-row .number-1, .number-2, .number-3 {
+    font-size: 260px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+}
+
+.content-row .number-1 {
+    color: #E479D8;
+}
+
+.content-row .number-2 {
+    color: #EE6489;
+}
+
+.content-row .number-3 {
+    color: #E448B8;
+}
+
+.content-row .text {
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+    margin-left: 25px;
+    padding: 50px;
+}
+
+.content-img, .banner-img {
+    width: 100%;
+}
+
+/* BANNER CRAZY IDEAS SECTION */
+.main-banner {
+    overflow: hidden;
+}
+.crazy-ideas {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.crazy-ideas h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #FCFFFE;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.banner-img {
+    transform: scale(-1, -1);
+    margin: -5% auto -38%;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-3 {
+    width: 50%;
+    position: absolute;
+    bottom: -35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .crazy-ideas h3 {
+        font-size: 45px;
+    }
+    .banner-img {
+        margin: -5% auto -30%;
+    }
+    .wave-1{
+        width: 35%;
+    }
+    .wave-2 {
+        width: 60%
+    }
+    .wave-3 {
+        width: 70%;
+    }
+}
+
+/* BUTTONS */
+.button-more, .button-send {
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.button-more {
+    padding: 15px 35px;
+    margin-top: 40px;
+    border: 1px solid #E479D8;
+    color: #4B237C;
+    background: #FFFFFF;
+}
+
+.button-send {
+    padding: 15px 50px;
+    margin-top: 10px;
+    border: 1px solid #FCFFFE;
+    background: transparent;
+    color: #FCFFFE;
+}
+
+
+/* CONTACT SECTION */
+.contact {
+    background-image: linear-gradient(to top left, #9A4BEF, #DE64D3, #EF7EC3);
+}
+
+
+.form-group {
+    margin: 30px 5px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-control {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #4B237C;
+    padding-right: 150px;
+    width: 100%;
+}
+
+#message {
+    border: 2px solid #4B237C;
+}
+
+.contact-header h3 {
+    text-align: left;
+    font-size: 60px;
+    display: inline-block;
+}
+
+
+.contact-header {
+    text-align: center;
+}
+
+.contact {
+    padding: 20px;
+}
+
+/* COPYRIGHTS */
+.copyrights p {
+    font-size: 10px;
+    color: #6C2A89;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.copyrights {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

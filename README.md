@@ -1,0 +1,2 @@
+# Awwwesomes templates
+This project contains websites templates created with the designs from [The Awwwesomes](https://the-awwwesomes.gitbooks.io/html-css-step-by-step/content/pl/appendix/layouts/index.html).

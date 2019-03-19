@@ -1,5 +1,15 @@
-/* MAIN HEADER  */
+* {
+    box-sizing: border-box;
+}
 
+*:focus
+{
+    box-shadow: none !important;
+    outline: none !important;
+
+}
+
+/* MAIN HEADER  */
 .main-header {
     position: relative
 }
@@ -67,7 +77,7 @@ a:hover {
 .header-text .square {
     background: #FFFFFF;
     width: 100%; 
-    font-size: 2rem; 
+    height: 2rem; 
     position: absolute;
     bottom: 50%;  
 }
@@ -78,14 +88,28 @@ a:hover {
     margin: 30px 0;
 }
 
-.offer h2, .about h2 {
+.offer h2, .about h2, .contact-form h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: 3rem; 
-    margin-bottom: 40px; 
+    margin-bottom: 20px; 
 }
 
 .offer h3, li, p {
     font-family: "Karla", sans-serif;
+}
+
+#offer-title {
+    letter-spacing: 2px;
+}
+
+.offer h3, li {
+    text-transform: uppercase; 
+    font-size: 1rem;  
+}
+
+.offer h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .offer ul {
@@ -101,15 +125,6 @@ a:hover {
     padding-bottom: 10px; 
 }
 
-.offer h3, li {
-    text-transform: uppercase; 
-    font-size: 1rem;  
-}
-
-.offer h3 {
-    letter-spacing: 2px;
-}
-
 .offer-features {
     display: flex; 
     justify-content: flex-start; 
@@ -117,6 +132,7 @@ a:hover {
 
 .offer-features .last-activity {
     border-bottom: none;
+    margin-bottom: 20px;
 }
 
 .offer-row {
@@ -127,25 +143,29 @@ a:hover {
     z-index: 2; 
 }
 
+/* workspace */
 .workspace {
     position: absolute;  
     width: 300px;
     bottom: -110px;
-    right: 50px;
+    right: 90px;
     z-index: 1;
+}
+
+.workspace h3, .contact-form h3 {
+    font-family: "Karla", sans-serif;
+    font-size: 0.75rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    position: absolute;
 }
 
 .workspace img {
     width: 100%; 
 }
 
-.workspace h3 {
-    font-family: "Karla", sans-serif;
-    font-size: 0.75rem; 
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    position: absolute;
-    top: -1rem;
+#workspace-title {
+    top: -2rem;
 }
 
 .rounded-circle {
@@ -153,14 +173,16 @@ a:hover {
     height: 80px;
     background-color: transparet; 
     border: 6px solid #D7D7D7; 
+} 
+
+#rounded-circle-workspace {
     position: absolute;
     top: -40px; 
     left: -40px;
     z-index: -1;
-} 
+}
 
 /* about */
-
 .about {
     padding-top: 30px;
     padding-bottom: 300px;
@@ -169,6 +191,121 @@ a:hover {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100%;
+}
+
+/* FOOTER */
+ /* contact-form */
+ .contact-form {
+    padding-top: 20px;
+}
+
+.contact-form .form-group {
+   margin: 15px 5px;
+   padding-top: 30px; 
+   text-align: left;
+   font-family: 'Libre Baskerville', serif;
+   }
+
+.contact-form .form-control {
+   border: 0;
+   border-radius: 0;
+   outline: 0;
+   border-bottom: 2px solid #E2E2E2;
+   padding-right: 150px;
+   width: 100%;
+}
+
+.form-group button {
+   margin-top: 7px; 
+   padding: 15px;
+   width: 100%; 
+   background: #E2E2E2;
+   border: none;
+   font-family: "Karla", sans-serif;
+   font-size: 13px; 
+   text-transform: uppercase; 
+}
+
+.contact-form label {
+   display: none; 
+}
+
+.form-section input {
+    font-family: "Karla", sans-serif; 
+ }
+
+input:focus
+{
+   border-bottom: solid 4px #E2E2E2 !important;
+}
+
+/* address */
+.address-section {
+    display: flex;
+    flex-direction: column;  
+}
+
+.address {
+   font-size: 15px; 
+   padding-top: 20px; 
+}
+
+#rounded-circle-office {
+    position: absolute;
+    bottom: -35px; 
+    left: -25px;
+    z-index: -1;
+}
+
+/* social media */
+.social-media {
+   background: url("../images/footer.jpg");
+   position: relative; 
+   background-position: bottom center;
+   background-size: cover; 
+   margin-top: 40px; 
+}
+
+.sm-img {
+   width: 100%; 
+   height: 70%; 
+   position: absolute;
+   bottom: -10px;
+}
+
+.sm-icon {
+   width: 35px; 
+}
+
+.sm-link {
+   margin: 0 20px;
+}
+
+.social-media-icons {
+   position: relative; 
+   display: flex;
+   justify-content: center; 
+   margin: 50px auto;
+   list-style-type: none;
+   padding-inline-start: 0px; 
+   width: 100%;
+}
+
+
+/* COPYRIGHTS */
+.copyrights p {
+   font-size: 10px; 
+   color: #FFFFFF;
+   opacity: 0.9; 
+   font-family: "Karla", sans-serif;
+   position: absolute;
+   bottom: 0px;
+   left: 10px; 
+   
+}
+
+.copyrights {
+   position: relative; 
 }
 
 /* MEDIA QUERIES */
@@ -193,6 +330,14 @@ a:hover {
     .workspace {
         opacity: .3;
     }
+
+    .address-section {
+        flex-direction: row;
+    }
+
+    .address p {
+        text-align: center; 
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -200,8 +345,9 @@ a:hover {
         font-size: 1.5rem; 
         letter-spacing: 0; 
     }
+
     .header-text .square { 
-        font-size: 1.1rem; 
+        height: 1.1rem; 
     }
     
     .workspace {
@@ -218,6 +364,11 @@ a:hover {
         background-size: 170%;
         background-position-x: center;
     }
+
+    .office img {
+        margin: 0 auto;
+        width: 100%; 
+    }
 }
 
 @media only screen and (max-width: 479px) {
@@ -227,5 +378,8 @@ a:hover {
     }
     .header-text .square { 
         font-size: 1rem; 
+    }
+    .address-section {
+        flex-direction: column; 
     }
 }

@@ -25,16 +25,16 @@
                     <div class="collapse navbar-collapse" id="main-navbar">
                         <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">offer</a>
+                            <a class="nav-link" href="#offer-title">offer</a>
                         </li>
                         <li class="nav-item" id="photos">
-                            <a class="nav-link" href="#">photos</a>
+                            <a class="nav-link" href="#offer-title">photos</a>
                         </li>
                         <li class="nav-item" id="team">
-                            <a class="nav-link" href="#">team</a>
+                            <a class="nav-link" href="#about-title">team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
+                            <a class="nav-link" href="#contact-title">contact</a>
                         </li>
                         </ul>
                     </div>
@@ -51,17 +51,19 @@
                 <img src="images/herobanner.jpg" alt="nature" class="hero-banner">
                 <div class="header-text">
                     <div class="square">&nbsp;</div>
-                    <h1>&nbsp;&nbsp;keep the moment&nbsp;&nbsp;</h1>  
+                    <h1>keep the moment</h1>  
                 </div>    
                 </div>
             </div>
         </div>
     </section>
-       
+    
+    <!-- MAIN BODY -->
+    <!-- offer -->
     <section class="container offer">
         <div class="row offer-row">
-            <div class="col-lg-9 offer-description">
-                <h2>offer</h2>
+            <div class="col-lg-8 offset-lg-1 offer-description">
+                <h2 id="offer-title">offer</h2>
                 <p>
                     Chillwave meggings tote bag asymmetrical pinterest hot chicken.
                     Gluten-free organic fanny pack, pabst truffaut umami leggings paleo 
@@ -88,7 +90,6 @@
                             <li>conferences</li>
                             <li>meetups</li>
                             <li class="last-activity">workshops</li>
-        
                         </ul>
                     </div>
                 </div>
@@ -105,18 +106,19 @@
                 </p> 
             </div>          
             <div class="workspace">
-                <div class="rounded-circle d-none d-md-block"></div>
-                <h3>workspace in hello studio</h3>
+                <div class="rounded-circle d-none d-md-block" id="rounded-circle-workspace"></div>
+                <h3 id="workspace-title">workspace in hello studio</h3>
                 <img src="images/offer-img.jpg" alt="flowers">
             </div>
         </div>
     </section>
 
+    <!-- about -->
     <section class="about">
         <div class="container">
             <div class="row about-text">
-                <div class="col-lg-9">
-                    <h2>about</h2>
+                <div class="col-lg-8 offset-lg-1">
+                    <h2 id="about-title">about</h2>
                     <p>
                         Crucifix hoodie intelligentsia, hammock helvetica stumptown polaroid.
                         Schlitz cornhole man bun pork belly, tumblr YOLO leggings truffaut. 
@@ -141,6 +143,85 @@
             </div>
         </div>
     </section>
+
+    <!-- contact form -->
+    <section class="container contact-form">
+            <div class="row">
+              <div class="col-lg-5 offset-lg-1 title-section">
+                <h2 id="contact-title">contact</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-5 offset-lg-1 form-section">
+                <form>
+                  <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" class="form-control" id="name" placeholder="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="e-mail">e-mail</label>
+                    <input type="text" class="form-control" id="e-mail" placeholder="e-mail">
+                  </div>
+                  <div class="form-group">
+                    <label for="topic">topic</label>
+                    <input type="text" class="form-control" id="message" placeholder="topic">
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="button-send">send</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-5 offset-lg-1">
+                <div class="row address-section">
+                    <div class="col-sm-6 office">
+                        <img src="images/contact-img.jpg" alt="boy in the office">
+                        <div class="rounded-circle d-none d-lg-block" id="rounded-circle-office"></div>
+                        <h3>visit our office</h3>
+                    </div>
+                    <div class="col-sm-6 address">
+                        <p>
+                            <strong>HELLO STUDIO</strong><br>
+                            Awesome St. 12<br>
+                            02-353 Warsaw,<br>
+                            POLAND
+                        </p> 
+                    </div> 
+                  </div> 
+                </div>     
+              </div>
+           </section>
+        
+        <!-- FOOTER -->
+        <!-- social media -->
+        <section class="social-media">
+            <div class="container">
+                <div class="row">
+                    <ul class="social-media-icons">
+                        <li>
+                            <a class="sm-link" href="#">
+                                <img src="images/facebook.svg" alt="facebook icon" class="sm-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sm-link" href="#">
+                                <img src="images/twitter.svg" alt="twitter icon" class="sm-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sm-link" href="#">
+                                <img src="images/pinterest.svg" alt="pinterest icon" class="sm-icon">
+                            </a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </section>
+                      
+          <!---- copyrights ---->
+        <div class="copyrights">
+            <p>Template designed by The Awwwesomes</p>
+        </div>
+
 <!-- JQUERY -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>
